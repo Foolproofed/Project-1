@@ -1,0 +1,257 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ddd0d0;
+    background-color: #121212;
+}
+
+h1, h2 {
+    font-family: 'NotoSansBold', sans-serif;
+    font-size: 35px;
+    color: #ffffff;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    padding: 0px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown Button */
+nav ul li .dropbtn {
+    text-decoration: none;
+    font-weight: bold;
+    color: #e0e0e0;
+    font-size: 18px;
+    border: 2px solid #e0e0e0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #333;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Add a default downward arrow */
+nav ul li .dropbtn::after {
+    content: " ▼";
+    margin-left: 8px;
+}
+
+nav ul li .dropbtn:hover {
+    color: #fff;
+}
+
+/* Dropdown Content */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #333;
+    min-width: 200px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+nav ul li .dropdown-content a {
+    color: #e0e0e0;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Dropdown Javascript */
+nav ul li.dropdown.active .dropdown-content {
+    display: block;
+}
+
+nav ul li.dropdown.active .dropbtn {
+    background-color: #575757;
+}
+
+/* Rotate Arrow*/
+nav ul li.dropdown.active .dropbtn::after {
+    content: " ▲"; 
+    margin-left: 8px;
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    color: #e0e0e0;
+    font-family: 'NotoSansBold', sans-serif;
+    font-size: 50px;
+    line-height: 1.6;
+    text-align: center;
+    z-index: 2;
+}
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.intro-image {
+    width: 300px; 
+    height: 350px;
+}
+
+.intro-gif {
+    width: 300px;  
+    height: 350px;
+}
+
+/* About Section  */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+section img {
+    max-width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section p {
+    max-width: 600px;
+    text-align: center;
+    color: #e0e0e0;
+}
+
+/* Contact Form Box */
+.contact-form-box {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: left;
+    margin-left: 770px;
+}
+
+.contact-form-box h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.contact-form-box label {
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form-box input,
+.contact-form-box textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    background-color: #fdfdfd;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.contact-form-box textarea {
+    height: 150px;
+}
+
+.contact-form-box button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-form-box button:hover {
+    background-color: #0056b3;
+}
+@font-face {
+    font-family: 'NotoSansBold';
+    src: url(fonts/NotoSans-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#NotoSans {
+    font-family: 'NotoSansBold', sans-serif;
+    font-size: 20px;
+    color: #e0e0e0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.about-photo {
+    max-width: 550px;
+    width: 100%;
+    height: 350px;
+}
+
+.about-text {
+    flex: 1;
+    color: #e0e0e0;
+    font-family: 'NotoSansBold', sans-serif;
+}
